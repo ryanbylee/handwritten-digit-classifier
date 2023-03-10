@@ -60,6 +60,8 @@ class Digit_Classifier(nn.Module):
     x = nn.ReLU()
     x = nn.MaxPool2d(2)
     '''
+    if x.shape == (28, 28):
+      x = torch.reshape(x, (1,1,28,28))
     x = self.conv1(x)
     x = self.conv2(x)
     x = x.view(x.size(0), 32 * 7 * 7)
