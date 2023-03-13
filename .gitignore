@@ -1,4 +1,4 @@
 .ipynb_checkpoints/
-PATH_FOR_TRAINING_SET/
-minst_classification.ipynb
 mnist_data/
+.vscode/
+.jupyter_ystore.db
